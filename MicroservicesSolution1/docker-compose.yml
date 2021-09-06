@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  microservicesproject1:
+    image: ${DOCKER_REGISTRY-}microservicesproject1
+    build:
+      context: .
+      dockerfile: MicroservicesProject1/Dockerfile
+
+  microservicesproject2:
+    image: ${DOCKER_REGISTRY-}microservicesproject2
+    build:
+      context: .
+      dockerfile: MicroservicesProject2/Dockerfile
+
