@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroservicesProject2", "Mi
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{333CB9CA-5077-453E-BD45-9232968144CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GatewayForMicroservices", "GatewayForMicroservices\GatewayForMicroservices.csproj", "{97377D22-ABD8-49B0-9F69-DDE991D9CA5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{333CB9CA-5077-453E-BD45-9232968144CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{333CB9CA-5077-453E-BD45-9232968144CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{333CB9CA-5077-453E-BD45-9232968144CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97377D22-ABD8-49B0-9F69-DDE991D9CA5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97377D22-ABD8-49B0-9F69-DDE991D9CA5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97377D22-ABD8-49B0-9F69-DDE991D9CA5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97377D22-ABD8-49B0-9F69-DDE991D9CA5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
