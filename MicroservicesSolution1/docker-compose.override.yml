@@ -1,6 +1,17 @@
 version: '3.4'
 
 services:
+  gatewayformicroservices:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+    ports:
+      - "80"
+      - "5001:443"
+    volumes:
+      - ~/.aspnet/https:/root/.aspnet/https:ro
+      - ~/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+
   microservicesproject1:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
@@ -11,6 +22,7 @@ services:
     volumes:
       - ~/.aspnet/https:/root/.aspnet/https:ro
       - ~/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+      
   microservicesproject2:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development

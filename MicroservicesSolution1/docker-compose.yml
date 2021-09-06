@@ -1,6 +1,12 @@
 version: '3.4'
 
 services:
+  gatewayformicroservices:
+    image: ${DOCKER_REGISTRY-}gatewayformicroservices
+    build:
+      context: .
+      dockerfile: GatewayForMicroservices/Dockerfile
+  
   microservicesproject1:
     image: ${DOCKER_REGISTRY-}microservicesproject1
     build:

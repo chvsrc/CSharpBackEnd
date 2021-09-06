@@ -5,8 +5,8 @@
     <DockerTargetOS>Linux</DockerTargetOS>
     <ProjectGuid>{333CB9CA-5077-453E-BD45-9232968144CD}</ProjectGuid>
     <DockerLaunchBrowser>True</DockerLaunchBrowser>
-    <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/services1</DockerServiceUrl>
-    <DockerServiceName>microservicesproject1</DockerServiceName>
+    <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/gatewaytempservices</DockerServiceUrl>
+    <DockerServiceName>gatewayformicroservices</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">
